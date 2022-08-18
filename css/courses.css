@@ -1,0 +1,150 @@
+/********************* PROGRAMS *********************/
+
+.programs {
+    background: var(--color-bg1);
+    height: 32rem;
+}
+
+.programs h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.programs__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.programs__left {
+    margin-right: 4rem;
+}
+
+.programs__left p {
+    margin: 1rem 0 3rem;
+}
+
+.programs__right {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1.2rem;
+}
+
+.program {
+    background: var(--color-bg2);
+    padding: 1.5rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+.program:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.program:nth-child(1) .program__icon {
+    background: var(--color-primary);
+}
+
+.program:nth-child(2) .program__icon {
+    background: var(--color-primary);
+}
+
+.program:nth-child(3) .program__icon {
+    background: var(--color-primary);
+}
+
+.program:nth-child(4) .program__icon {
+    background: var(--color-primary);
+}
+
+.program:nth-child(5) .program__icon {
+    background: var(--color-primary);
+}
+
+.program:nth-child(6) .program__icon {
+    background: var(--color-primary);
+}
+
+.program__icon {
+    background: var(--color-primary);
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+
+.program h5 {
+    margin: 2rem 0 1rem;
+}
+
+.program p {
+    font-size: 0.85rem;
+}
+
+
+/* ======================= MEDIA QUERIES (TABLETS) ===============*/
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md)
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+
+.programs {
+    height: auto;
+}
+
+.programs__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.programs__left {
+    margin-right: 0;
+}
+
+.programs__right {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+}
+
+}
+
+/* ======================= MEDIA QUERIES (MOBILE) ===============*/
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+
+    .programs__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .program {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    
+    .program__icon {
+        margin-top: 4px;
+        display: inline-block;
+    }
+
+}
