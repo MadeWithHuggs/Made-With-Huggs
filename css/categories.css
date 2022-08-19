@@ -2,6 +2,20 @@
     border-radius: 50%;
   }
 
+  .about__achievements {
+    margin-top: 3rem;
+}
+
+.about__achievements-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.about__achievements-right > p {
+  margin: 1.6rem 0 2.5rem;
+}
+
 .categories__socials {
     gap: 3rem;
   }
@@ -36,33 +50,9 @@
 }
 
 
-/* ======================= MEDIA QUERIES (TABLETS) ===============*/
-
-@media screen and (max-width: 1024px) {
-  .container {
-      width: var(--container-width-md)
-  }
-
-  h1 {
-      font-size: 2.2rem;
-  }
-
-  h2 {
-      font-size: 1.7rem;
-  }
-
-  h3 {
-      font-size: 1.4rem;
-  }
-
-  h4 {
-      font-size: 1.2rem;
-  }
-}
-
 /*  ================  CATEGORIES  ================== */
 .blog__posts {
-  height: auto;
+  padding: 0%;
 }
 
 .blog__posts__container {
@@ -79,24 +69,50 @@
   gap: 0.7rem;
 }
 
-/* ======================= MEDIA QUERIES (MOBILE) ===============*/
 
-@media screen and (max-width: 800px) {
-  .container {
-      width: var(--container-width-sm);
+
+/* ======================= MEDIA QUERIES (TABLETS) ===============*/
+
+@media screen and (max-width: 1024px) {
+  .about__achievements {
+      margin-top: 2rem;
   }
 
+  .about__achievements-container {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+  }
 
-/* ================ CATEGORIES ================ */
-.blog__posts__container {
-  grid-template-columns: 1fr;
-  text-align: center;
+  .about__achievements-left {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .about__achievements-right {
+    text-align: center;
+  }
+
+  .achievements__cards {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .seanhuggins-image {
+    max-width: 50%;
+  }
+
+}
+
+/* ======================= MEDIA QUERIES (MOBILE) ===============*/
+
+@media screen and (max-width: 600px) {
+
+  .achievements__cards {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.7rem;
+  }
+
 }
 
 
-.blog__post {
-  padding: 1rem;
-  border-radius: 1rem;
-}
-
-}
